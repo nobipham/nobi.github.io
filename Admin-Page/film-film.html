@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Creative - Bootstrap 3 Responsive Admin Template">
+    <link rel="shortcut icon" href="img/favicon.png">
+
+    <title>Trang Chủ</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- bootstrap theme -->
+    <link href="css/bootstrap-theme.css" rel="stylesheet">
+    <!--external css-->
+    <!-- font icon -->
+    <link href="css/elegant-icons-style.css" rel="stylesheet" />
+    <link href="css/font-awesome.min.css" rel="stylesheet" />
+    <!-- full calendar css-->
+    <link href="assets/fullcalendar/fullcalendar/bootstrap-fullcalendar.css" rel="stylesheet" />
+    <link href="assets/fullcalendar/fullcalendar/fullcalendar.css" rel="stylesheet" />
+    <!-- easy pie chart-->
+    <link href="assets/jquery-easy-pie-chart/jquery.easy-pie-chart.css" rel="stylesheet" type="text/css" media="screen" />
+    <!-- owl carousel -->
+    <link rel="stylesheet" href="css/owl.carousel.css" type="text/css">
+    <link href="css/jquery-jvectormap-1.2.2.css" rel="stylesheet">
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="css/fullcalendar.css">
+    <link href="css/widgets.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style-responsive.css" rel="stylesheet" />
+    <link href="css/xcharts.min.css" rel=" stylesheet">
+    <link href="css/jquery-ui-1.10.4.min.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+      <script src="js/lte-ie7.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <!-- container section start -->
+    <section id="container" class="">
+
+
+        <header class="header dark-bg">
+            <div class="toggle-nav">
+                <div class="icon-reorder tooltips" data-original-title="Toggle Navigation" data-placement="bottom"><i class="icon_menu"></i></div>
+            </div>
+
+            <!--logo start-->
+            <a href="index.html" class="logo">Movie <span class="lite">Admin</span></a>
+            <!--logo end-->
+
+            <div class="nav search-row" id="top_menu">
+                <!--  search form start -->
+                <ul class="nav top-menu">
+                    <li>
+                        <form class="navbar-form">
+                            <input class="form-control" placeholder="Search" type="text">
+                        </form>
+                    </li>
+                </ul>
+                <!--  search form end -->
+            </div>
+
+            <div class="top-nav notification-row">
+                <!-- notificatoin dropdown start-->
+                <ul class="nav pull-right top-menu">
+
+                    <li class="dropdown">
+                        <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                            <span class="profile-ava">
+                                <img alt="" src="img/avatar1_small.png">
+                            </span>
+                            <span class="username">Phạm Đạt</span>
+                            <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu extended logout">
+                            <div class="log-arrow-up"></div>
+                            <li class="eborder-top">
+                                <a href="404.html"><i class="icon_profile"></i> My Profile</a>
+                            </li>
+                            <!-- <li>
+                                <a href="#"><i class="icon_mail_alt"></i> My Inbox</a>
+                            </li> -->
+                            <li>
+                                <a href="404.html"><i class="icon_clock_alt"></i> Timeline</a>
+                            </li>
+                            <li>
+                                <a href="404.html"><i class="icon_chat_alt"></i> Chats</a>
+                            </li>
+                            <li>
+                                <a href="login.html"><i class="icon_key_alt"></i> Log Out</a>
+                            </li>
+                            <!-- <li>
+                                <a href="documentation.html"><i class="icon_key_alt"></i> Documentation</a>
+                            </li>
+                            <li>
+                                <a href="documentation.html"><i class="icon_key_alt"></i> Documentation</a>
+                            </li> -->
+                        </ul>
+                    </li>
+                    <!-- user login dropdown end -->
+                </ul>
+                <!-- notificatoin dropdown end-->
+            </div>
+        </header>
+        <!--header end-->
+
+        <!--sidebar start-->
+        <aside>
+            <div id="sidebar" class="nav-collapse ">
+                <!-- sidebar menu start-->
+                <ul class="sidebar-menu">
+                    <li class="active">
+                        <a class="" href="index.html">
+                            <i class="icon_house_alt"></i>
+                            <span>Trang Chủ</span>
+                        </a>
+                    </li>
+                    <li class="sub-menu">
+                        <a href="javascript:;" class="">
+                            <i class="icon_document_alt"></i>
+                            <span>Member</span>
+                            <span class="menu-arrow arrow_carrot-right"></span>
+                        </a>
+                        <ul class="sub">
+                            <li><a class="" href="member-admin.html">Quản trị viên</a></li>
+                            <li><a class="" href="member-user.html">Người dùng</a></li>
+                        </ul>
+                    </li>
+                    <li class="sub-menu">
+                        <a class="" href="#">
+                            <i class="icon_film"></i>
+                            <span>Rạp Phim</span>
+                            <span class="menu-arrow arrow_carrot-right"></span>
+                        </a>
+                        <ul class="sub">
+                            <li><a class="" href="film-film.html">Phim</a></li>
+                            <li><a class="" href="film-deal.html">Khuyến mãi</a></li>
+                            <li><a class="" href="404.html">Slideshow</a></li>
+                            <li><a class="" href="404.html">Menu chính</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="" href="#">
+                            <i class="icon_piechart"></i>
+                            <span>Doanh thu</span>
+
+                        </a>
+
+                    </li>
+                    <li class="sub-menu">
+                        <a href="javascript:;" class="">
+                            <i class="icon_paperclip"></i>
+                            <span>Tin tức</span>
+                            <span class="menu-arrow arrow_carrot-right"></span>
+                        </a>
+                        <ul class="sub">
+                            <li><a class="" href="404.html">Tin mới</a></li>
+                            <li><a class="" href="404.html">Bình luận phim</a></li>
+                            <li><a class="" href="404.html">Nhân vật</a></li>
+                        </ul>
+                    </li>
+
+
+                    <li class="sub-menu">
+                        <a href="javascript:;" class="">
+                            <i class="icon_documents_alt"></i>
+                            <span>Thông Tin</span>
+                            <span class="menu-arrow arrow_carrot-right"></span>
+                        </a>
+                        <ul class="sub">
+                            <li><a class="" href="404.html"><span>Trang Web</span></a></li>
+                            <li><a class="" href="404.html">Quản trị</a></li>
+                            <li><a class="" href="404.html">404 Error</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+                <!-- sidebar menu end-->
+            </div>
+        </aside>
+        <!--sidebar end-->
+
+        <!--main content start-->
+        <section id="main-content">
+            <section class="wrapper">
+                <!--overview start-->
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h3 class="page-header"><i class="fa fa-film"></i>Rạp Phim</h3>
+                        <ol class="breadcrumb">
+                            <li><i class="fa fa-home"></i><a href="index.html">Trang chủ</a></li>
+                            <li><i class="fa fa-film"></i>Rạp phim</li>
+                            <li><i class="fa fa-film"></i>Phim</li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="row">
+
+                    <div class="col-lg-12 col-md-12">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h2><i class="fa fa-flag-o red"></i><strong>Quản trị phim</strong></h2>
+                                <div class="panel-actions">
+                                    <a href="index.html#" class="btn-setting"><i class="fa fa-rotate-right"></i></a>
+                                    <a href="index.html#" class="btn-minimize"><i class="fa fa-chevron-up"></i></a>
+                                    <a href="index.html#" class="btn-close"><i class="fa fa-times"></i></a>
+                                </div>
+                            </div>
+                            <div class="panel-body">
+                                <table class="table bootstrap-datatable countries">
+                                    <thead>
+                                        <tr>
+                                            <th></th>
+                                            <th>Tên phim</th>
+                                            <th>Miêu tả phim</th>
+                                            <th>Số vé đã bán ra</th>
+                                            <th>Doanh thu</th>
+                                            <th>Lịch chiếu</th>
+                                            <th>Chỉnh sửa</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><img src="img/phim-1.jpg" style="height:18px; margin-top:-2px;"></td>
+                                            <td>Fast & Furious : Hobbs & Shaw</td>
+                                            <td>Phần tiếp theo của bộ phim đình đám được công chiếu... </td>
+                                            <td>14054</td>
+                                            <td>
+                                                <div class="progress thin">
+                                                    <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+                                                    </div>
+                                                    <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
+                                                    </div>
+                                                </div>
+                                                <span class="sr-only">80%</span>
+                                            </td>
+                                            <td>
+                                                <button class="btn btn-default">09:30</button>
+                                                <button class="btn btn-default">10:30</button>
+                                                <button class="btn btn-default">11:45</button>
+                                                <button class="btn btn-default">12:30</button>
+                                                <button class="btn btn-default">16:30</button>
+                                                <button class="btn btn-default">17:30</button>
+                                            </td>
+                                            <td>
+                                                <button class="btn btn-default" data-toggle="modal" data-target="#registed"><i class="fa fa-plus"></i></button>
+                                                <button class="btn btn-default"><i class="fa fa-refresh"></i></button>
+                                                <button class="btn btn-danger" data-toggle="modal" data-target="#remove-registed"><i class="fa fa-times"></i></button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><img src="img/phim-2.jpg" style="height:18px; margin-top:-2px;"></td>
+                                            <td>The White Storm 2 - Drug Lords</td>
+                                            <td>Phần tiếp theo của bộ phim đình đám được công chiếu... </td>
+                                            <td>10054</td>
+                                            <td>
+                                                <div class="progress thin">
+                                                    <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+                                                    </div>
+                                                    <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+                                                    </div>
+                                                </div>
+                                                <span class="sr-only">60%</span>
+                                            </td>
+                                            <td>
+                                                <button class="btn btn-default">09:30</button>
+                                                <button class="btn btn-default">10:30</button>
+                                                <button class="btn btn-default">11:45</button>
+                                                <button class="btn btn-default">12:30</button>
+                                                <button class="btn btn-default">16:30</button>
+                                                <button class="btn btn-default">17:30</button>
+                                            </td>
+                                            <td>
+                                                <button class="btn btn-default" data-toggle="modal" data-target="#registed"><i class="fa fa-plus"></i></button>
+                                                <button class="btn btn-default"><i class="fa fa-refresh"></i></button>
+                                                <button class="btn btn-danger" data-toggle="modal" data-target="#remove-registed"><i class="fa fa-times"></i></button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><img src="img/phim-3.jpeg" style="height:18px; margin-top:-2px;"></td>
+                                            <td>Scary Stories To Tell In The Dark</td>
+                                            <td>Phần tiếp theo của bộ phim đình đám được công chiếu... </td>
+                                            <td>8054</td>
+                                            <td>
+                                                <div class="progress thin">
+                                                    <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+                                                    </div>
+                                                    <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+                                                    </div>
+                                                </div>
+                                                <span class="sr-only">40%</span>
+                                            </td>
+                                            <td>
+                                                <button class="btn btn-default">09:30</button>
+                                                <button class="btn btn-default">10:30</button>
+                                                <button class="btn btn-default">12:45</button>
+                                                <button class="btn btn-default">13:30</button>
+                                                <button class="btn btn-default">12:00</button>
+                                                <button class="btn btn-default">20:30</button>
+                                            </td>
+                                            <td>
+                                                <button class="btn btn-default" data-toggle="modal" data-target="#registed"><i class="fa fa-plus"></i></button>
+                                                <button class="btn btn-default"><i class="fa fa-refresh"></i></button>
+                                                <button class="btn btn-danger" data-toggle="modal" data-target="#remove-registed"><i class="fa fa-times"></i></button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><img src="img/phim-4.jpg" style="height:18px; margin-top:-2px;"></td>
+                                            <td>Exit</td>
+                                            <td>Phần tiếp theo của bộ phim đình đám được công chiếu... </td>
+                                            <td>4054</td>
+                                            <td>
+                                                <div class="progress thin">
+                                                    <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="width: 30%">
+                                                    </div>
+                                                    <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%">
+                                                    </div>
+                                                </div>
+                                                <span class="sr-only">30%</span>
+                                            </td>
+                                            <td>
+                                                <button class="btn btn-default">09:30</button>
+                                                <button class="btn btn-default">10:30</button>
+                                                <button class="btn btn-default">12:45</button>
+                                                <button class="btn btn-default">13:30</button>
+                                                <button class="btn btn-default">12:00</button>
+                                                <button class="btn btn-default">20:30</button>
+                                            </td>
+                                            <td>
+                                                <button class="btn btn-default" data-toggle="modal" data-target="#registed"><i class="fa fa-plus"></i></button>
+                                                <button class="btn btn-default"><i class="fa fa-refresh"></i></button>
+                                                <button class="btn btn-danger" data-toggle="modal" data-target="#remove-registed"><i class="fa fa-times"></i></button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><img src="img/phim-5.jpg" style="height:18px; margin-top:-2px;"></td>
+                                            <td>Dora And The Lost City Of Gold</td>
+                                            <td>Phần tiếp theo của bộ phim đình đám được công chiếu... </td>
+                                            <td>5054</td>
+                                            <td>
+                                                <div class="progress thin">
+                                                    <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100" style="width: 35%">
+                                                    </div>
+                                                    <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="width: 65%">
+                                                    </div>
+                                                </div>
+                                                <span class="sr-only">35%</span>
+                                            </td>
+                                            <td>
+                                                <button class="btn btn-default">11:30</button>
+                                                <button class="btn btn-default">13:30</button>
+                                                <button class="btn btn-default">15:45</button>
+                                                <button class="btn btn-default">16:30</button>
+                                                <button class="btn btn-default">20:00</button>
+                                                <button class="btn btn-default">21:30</button>
+                                            </td>
+                                            <td>
+                                                <button class="btn btn-default" data-toggle="modal" data-target="#registed"><i class="fa fa-plus"></i></button>
+                                                <button class="btn btn-default"><i class="fa fa-refresh"></i></button>
+                                                <button class="btn btn-danger" data-toggle="modal" data-target="#remove-registed"><i class="fa fa-times"></i></button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><img src="img/phim-6.jpg" style="height:18px; margin-top:-2px;"></td>
+                                            <td>Những Cánh Én Đầu Tiên</td>
+                                            <td>Phần tiếp theo của bộ phim đình đám được công chiếu... </td>
+                                            <td>9054</td>
+                                            <td>
+                                                <div class="progress thin">
+                                                    <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 45%">
+                                                    </div>
+                                                    <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100" style="width: 55%">
+                                                    </div>
+                                                </div>
+                                                <span class="sr-only">45%</span>
+                                            </td>
+                                            <td>
+                                                <button class="btn btn-default">11:30</button>
+                                                <button class="btn btn-default">12:30</button>
+                                                <button class="btn btn-default">18:45</button>
+                                                <button class="btn btn-default">19:30</button>
+                                                <button class="btn btn-default">20:00</button>
+                                                <button class="btn btn-default">21:30</button>
+                                            </td>
+                                            <td>
+                                                <button class="btn btn-default" data-toggle="modal" data-target="#registed"><i class="fa fa-plus"></i></button>
+                                                <button class="btn btn-default"><i class="fa fa-refresh"></i></button>
+                                                <button class="btn btn-danger" data-toggle="modal" data-target="#remove-registed"><i class="fa fa-times"></i></button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><img src="img/phim-7.jpg" style="height:18px; margin-top:-2px;"></td>
+                                            <td>Bring The Soul: The Movie</td>
+                                            <td>Bộ phim của BTS .... </td>
+                                            <td>16054</td>
+                                            <td>
+                                                <div class="progress thin">
+                                                    <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+                                                    </div>
+                                                    <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
+                                                    </div>
+                                                </div>
+                                                <span class="sr-only">80%</span>
+                                            </td>
+                                            <td>
+                                                <button class="btn btn-default">09:30</button>
+                                                <button class="btn btn-default">10:30</button>
+                                                <button class="btn btn-default">12:45</button>
+                                                <button class="btn btn-default">13:30</button>
+                                                <button class="btn btn-default">12:00</button>
+                                                <button class="btn btn-default">20:30</button>
+                                            </td>
+                                            <td>
+                                                <button class="btn btn-default" data-toggle="modal" data-target="#registed"><i class="fa fa-plus"></i></button>
+                                                <button class="btn btn-default"><i class="fa fa-refresh"></i></button>
+                                                <button class="btn btn-danger" data-toggle="modal" data-target="#remove-registed"><i class="fa fa-times"></i></button>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td><img src="img/phim-8.jpg" style="height:18px; margin-top:-2px;"></td>
+                                            <td>Romang</td>
+                                            <td>Bộ phim nói về tình cảm cha mẹ </td>
+                                            <td>9054</td>
+                                            <td>
+                                                <div class="progress thin">
+                                                    <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+                                                    </div>
+                                                    <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
+                                                    </div>
+                                                </div>
+                                                <span class="sr-only">80%</span>
+                                            </td>
+                                            <td>
+                                                <button class="btn btn-default">13:30</button>
+                                                <button class="btn btn-default">14:30</button>
+                                                <button class="btn btn-default">15:45</button>
+                                                <button class="btn btn-default">17:30</button>
+                                                <button class="btn btn-default">18:00</button>
+                                                <button class="btn btn-default">21:30</button>
+                                            </td>
+
+                                            <td>
+                                                <button class="btn btn-default" data-toggle="modal" data-target="#registed"><i class="fa fa-plus"></i></button>
+                                                <button class="btn btn-default"><i class="fa fa-refresh"></i></button>
+                                                <button class="btn btn-danger" data-toggle="modal" data-target="#remove-registed"><i class="fa fa-times"></i></button>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <nav>
+                                    <ul class="pagination">
+                                        <li class="page-item">
+                                            <a href="#" class="page-link" aria-label="Previous">
+                                                <span aria-hidden="true">&laquo;</span>
+                                            </a>
+                                        </li>
+                                        <li class="page-item"><a href="#" class="page-link">1</a></li>
+                                        <li class="page-item"><a href="#" class="page-link">2</a></li>
+                                        <li class="page-item"><a href="#" class="page-link">3</a></li>
+                                        <li class="page-item"><a href="#" class="page-link">4</a></li>
+                                        <li class="page-item"><a href="#" class="page-link">5</a></li>
+                                        <li class="page-item"><a href="#" class="page-link">6</a></li>
+                                        <li class="page-item"><a href="#" class="page-link">7</a></li>
+                                        <li class="page-item">
+                                            <a href="#" class="page-link" aria-label="Next">
+                                                <span aria-hidden="true">&raquo;</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!--/col-->
+                </div>
+
+
+
+                <!-- statics end -->
+
+            </section>
+        </section>
+        <!--main content end-->
+    </section>
+    <div class="modal fade" id="registed" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content register-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="modalLabel">Thêm thông tin phim</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <fieldset class="form-group">
+                        <label for="name">Nhập tên phim</label>
+                        <input type="text" class="form-control" id="name" name="name">
+                    </fieldset>
+                    <fieldset class="form-group">
+                        <label for="file">Hình của bộ phim</label>
+                        <div class="custom-file">
+                            <input type="file" class="custom-file-input" id="customFile">
+                        </div>
+                    </fieldset>
+                    <fieldset class="form-group">
+                        <label for="showtimes">Thêm lịch chiếu cho bộ phim</label>
+                        <input type="text" class="form-control" id="showtimes" name="showtimes">
+                    </fieldset>
+                    <fieldset class="form-group">
+                        <label for="info">Nhập thông tin thêm của bộ phim</label>
+                        <input type="text" class="form-control" id="password" name="password">
+                    </fieldset>
+                    <fieldset class="form-group">
+                        <label for="ticketseller">Nhập số vé đã bán của hôm nay</label>
+                        <input type="text" class="form-control" id="ticketseller" name="ticketseller">
+                    </fieldset>
+                    <hr>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success" data-dismiss="modal" data-toggle="modal" data-target="#success-registed">Thêm</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="success-registed" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content register-content">
+                <div class="modal-body">
+                    <h5 style="font-weight: 200;">Chúc mừng bạn đã thêm thông tin cho phim thành công</h5>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="remove-registed" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content register-content">
+                <div class="modal-body">
+                    <h5 style="font-weight: 200;">Bạn đã xóa bộ phim này</h5>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- container section start -->
+
+    <!-- javascripts -->
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery-ui-1.10.4.min.js"></script>
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui-1.9.2.custom.min.js"></script>
+    <!-- bootstrap -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- nice scroll -->
+    <script src="js/jquery.scrollTo.min.js"></script>
+    <script src="js/jquery.nicescroll.js" type="text/javascript"></script>
+    <!-- charts scripts -->
+    <script src="assets/jquery-knob/js/jquery.knob.js"></script>
+    <script src="js/jquery.sparkline.js" type="text/javascript"></script>
+    <script src="assets/jquery-easy-pie-chart/jquery.easy-pie-chart.js"></script>
+    <script src="js/owl.carousel.js"></script>
+    <!-- jQuery full calendar -->
+    <<script src="js/fullcalendar.min.js"></script>
+        <!-- Full Google Calendar - Calendar -->
+        <script src="assets/fullcalendar/fullcalendar/fullcalendar.js"></script>
+        <!--script for this page only-->
+        <script src="js/calendar-custom.js"></script>
+        <script src="js/jquery.rateit.min.js"></script>
+        <!-- custom select -->
+        <script src="js/jquery.customSelect.min.js"></script>
+        <script src="assets/chart-master/Chart.js"></script>
+
+        <!--custome script for all page-->
+        <script src="js/scripts.js"></script>
+        <!-- custom script for this page-->
+        <script src="js/sparkline-chart.js"></script>
+        <script src="js/easy-pie-chart.js"></script>
+        <script src="js/jquery-jvectormap-1.2.2.min.js"></script>
+        <script src="js/jquery-jvectormap-world-mill-en.js"></script>
+        <script src="js/xcharts.min.js"></script>
+        <script src="js/jquery.autosize.min.js"></script>
+        <script src="js/jquery.placeholder.min.js"></script>
+        <script src="js/gdp-data.js"></script>
+        <script src="js/morris.min.js"></script>
+        <script src="js/sparklines.js"></script>
+        <script src="js/charts.js"></script>
+        <script src="js/jquery.slimscroll.min.js"></script>
+        <script>
+            //knob
+            $(function() {
+                $(".knob").knob({
+                    'draw': function() {
+                        $(this.i).val(this.cv + '%')
+                    }
+                })
+            });
+
+            //carousel
+            $(document).ready(function() {
+                $("#owl-slider").owlCarousel({
+                    navigation: true,
+                    slideSpeed: 300,
+                    paginationSpeed: 400,
+                    singleItem: true
+
+                });
+            });
+
+            //custom select box
+
+            $(function() {
+                $('select.styled').customSelect();
+            });
+
+            /* ---------- Map ---------- */
+            $(function() {
+                $('#map').vectorMap({
+                    map: 'world_mill_en',
+                    series: {
+                        regions: [{
+                            values: gdpData,
+                            scale: ['#000', '#000'],
+                            normalizeFunction: 'polynomial'
+                        }]
+                    },
+                    backgroundColor: '#eef3f7',
+                    onLabelShow: function(e, el, code) {
+                        el.html(el.html() + ' (GDP - ' + gdpData[code] + ')');
+                    }
+                });
+            });
+        </script>
+
+</body>
+
+</html>

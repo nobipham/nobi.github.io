@@ -1,0 +1,1017 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Trang chủ</title>
+    <link rel="stylesheet" href="vendor/bootstrap-4.3.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="vendor/fontawesome-free-5.9.0-web/css/all.css">
+    <link rel="stylesheet" href="css/web-trangchu.css">
+</head>
+
+<body>
+    <video autoplay muted loop class="backgroundVideo">
+        <source src="mp4/Background-TrangChu.mp4" type="video/mp4">
+    </video>
+    <div class="main">
+        <div class="header">
+            <div class="header_home">
+                <a href="#">
+                    <img src="img/logo_home.png">
+                </a>
+            </div>
+            <div class="right">
+                <div class="user">
+                    <span>
+                        <span>
+                            <a class="btn btn-primary btn-lg" data-toggle="modal" data-target="#registed"
+                                type="button">Đăng ký</a>
+                            <a class="btn btn-primary btn-lg" data-toggle="modal" data-target="#login"
+                                type="button">Đăng nhập</a>
+                        </span>
+                    </span>
+                </div>
+                <div class=" hotline">
+                    <span>
+                        <span style="color:red">
+                            Hotline:
+                        </span>
+                    <span style="color:white">
+                            012.3452142
+                        </span>
+                    </span>
+                </div>
+
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-sm" style="background:url(./img/bg_menu.png);">
+            <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-content"
+                        aria-controls="nav-content" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button> -->
+            <!-- Links -->
+            <div class="collapse navbar-collapse" id="nav-content">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="web-trangchu.html">TRANG CHỦ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="web-datve.html">ĐẶT VÉ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="web-chitiet.html">GIỚI THIỆU</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="web-tintuc.html">TIN TỨC</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="web-giave.html">GIÁ VÉ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="web-dichvu.html">DỊCH VỤ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="web-thanhvien.html">THÀNH VIÊN</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="web-hotro.html">HỖ TRỢ</a>
+                    </li>
+                </ul>
+                <div class="container searching-nav">
+                    <div class="d-flex justify-content-center">
+                        <div class="searchbar nav-item">
+                            <input class="search_input" type="text" name="" placeholder="Tìm kiếm...">
+                            <a href="#" class="search_icon"><i class="fas fa-search"></i></a>
+                        </div>
+                    </div>
+                </div>
+        </nav>
+        <div class="mySlide">
+            <div id="myCarousel" class="carousel slide" data-interval="false" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                </ol>
+                <a href="#myTrailer" role="button" class="exit-trailer" onclick="backtoPoster()">
+                    <i class="fa fa-times fa-3x"></i>
+                </a>
+                <div class="carousel-inner" role="listbox">
+                    <div class="carousel-item active">
+                        <a href="#" id="play 00" role="button" class="play-trailer" onclick="switchToVideo('00',this)">
+                            <i class="fa fa-play-circle fa-4x"></i>
+                        </a>
+                        <video id="trailer 00" class="trailerVideo 00" controls>
+                            <source src="mp4/Lion_King.mp4" type="video/mp4">
+                        </video>
+                        <img id="poster 00" class="d-block w-100" src="img/LION KING.jpg" alt="First slide">
+                    </div>
+                    <div class="carousel-item">
+                        <a href="#" id="play 01" role="button" class="play-trailer" onclick="switchToVideo('01',this)">
+                            <i class="fa fa-play-circle fa-4x"></i>
+                        </a>
+                        <video id="trailer 01" class="trailerVideo" controls>
+                            <source src="mp4/Spider_Man.mp4" type="video/mp4">
+                        </video>
+                        <img id="poster 01" class="d-block w-100" src="img/NGUOI NHEN.jpg" alt="Second slide">
+                    </div>
+                    <div class="carousel-item">
+                        <a href="#" id="play 02" role="button" class="play-trailer 02" onclick="switchToVideo('02',this)">
+                            <i class="fa fa-play-circle fa-4x"></i>
+                        </a>
+                        <video id="trailer 02" class="trailerVideo" controls>
+                            <source src="mp4/Parasite.mp4" type="video/mp4">
+                        </video>
+                        <img id="poster 02" class="d-block w-100" src="img/BANNERKST.jpg" alt="Third slide">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev" onclick="backtoPoster()">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next" onclick="backtoPoster()">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+
+
+            </div>
+            <div class="box-buy-ticket">
+                <section class="tabs">
+                    <div class="label-tab">Mua vé nhanh</div>
+                    <input id="tab-1" type="radio" name="radio-set" class="tab-selector-1">
+                    <label for=tab-1 class="tab-label-1">Theo phim</label>
+                    <input id="tab-2" type="radio" name="radio-set" class="tab-selector-2">
+                    <label for=tab-2 class="tab-label-2">Theo ngày</label>
+                    <input id="tab-3" type="radio" name="radio-set" class="tab-selector-3">
+                    <label for=tab-3 class="tab-label-3">Theo rạp</label>
+                    <div class="clear-shadow"></div>
+                    <div class="content">
+                        <div class="content-1">
+                            <form>
+                                <div class="films">
+                                    <select id="Films" name="Films">
+                                        <option value>-- Chọn Phim --</option>
+                                        <option value="1">Vua sư tử (2D,PĐ) - P</option>
+                                        <option value="2">Vua sư tử (2D,LT) - P</option>
+                                        <option value="3">Vua sư tử (3D,LT) - P</option>
+                                        <option value="4">Người nhện xa nhà (2D) - C13</option>
+                                        <option value="5">Người nhện xa nhà (3D) - C13</option>
+                                        <option value="6">Ký sinh trùng (2D) - C18</option>
+                                    </select>
+                                </div>
+                                <div class="date">
+                                    <select name="Date" id="Date">
+                                        <option value="0">-- Chọn ngày --</option>
+                                        <option value="1">Thứ sáu - 19/07/2019</option>
+                                        <option value="2">Thứ bảy - 20/07/2019</option>
+                                        <option value="3">Chủ nhật - 21/07/2019</option>
+                                    </select>
+                                </div>
+                                <div class="plan">
+                                    <select name="Plan" id="Plan">
+                                        <option value="0">-- Chọn suất --</option>
+                                    </select>
+                                </div>
+                                <div class="theater">
+                                    <select name="Theater" id="Theater">
+                                        <option value="0">-- Chọn rạp --</option>
+                                    </select>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <a class="buy-ticket">MUA VÉ
+                    </a>
+                </section>
+            </div>
+        </div>
+        <!-- End Header-->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="movies-tab">
+                    <div class="menu-tab">
+                        <ul>
+                            <li class="tx_white"><a href="#tab_1" id="tab_1" class="current-tab active" onclick="openTab(event, 'tab-01')">PHIM
+                                    MỚI</a>
+                            </li>
+                            <li class="tx_white"><a href="#tab_2" id="tab_2" class="current-tab" onclick="openTab(event, 'tab-02')">PHIM ĐANG CHIẾU</a></li>
+                            <li class="tx_white"><a href="#tab_3" id="tab_3" class="current-tab" onclick="openTab(event, 'tab-03')">PHIM SẮP CHIẾU</a></li>
+                        </ul>
+                        <!-- <p><a href="#">"XEM THÊM"<i class="fa fa-arrow-right"></i></a></p> -->
+                    </div>
+                    <div id="tab-01" class="col-md-12 tab-content animatedFadeInUp fadeInUp">
+                        <div class="row p-10">
+                            <div class=" col-md-3 col-sm-3 mt-10 movie-item">
+                                <div class="article-movie-home">
+                                    <img class="img-fluid" src="img/film-LionKing.jpeg" alt="">
+                                    <div class="movie-hover">
+                                        <p href="#" class="tx_black">Vua sư tử (2D,PĐ) - P</p>
+                                        <p class="font_light">
+                                            Thể loại: Phiêu lưu<br> Khởi chiếu: 17/07/2019
+                                        </p>
+                                        <a href="#" class="btn-datve">ĐẶT VÉ</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-md-3 col-sm-3 mt-10 movie-item">
+                                <div class="article-movie-home">
+                                    <img class="img-fluid" src="img/film-SpiderMan.jpeg" alt="">
+                                    <div class="movie-hover">
+                                        <p href="#" class="tx_black">Người nhện xa nhà (2D) - C13</p>
+                                        <p class="font_light">
+                                            Thể loại: Hành động<br> Khởi chiếu: 03/07/2019
+                                        </p>
+                                        <a href="#" class="btn-datve">ĐẶT VÉ</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-3 mt-10 movie-item">
+                                <div class="article-movie-home">
+                                    <img class="img-fluid" src="img/film-KiSinhTrung.jpeg" alt="">
+                                    <div class="movie-hover">
+                                        <p href="#" class="tx_black">Ký sinh trùng (2D) - C18</p>
+                                        <p class="font_light">
+                                            Thể loại: Tâm lý, tình cảm<br> Khởi chiếu: 21/06/2019
+                                        </p>
+                                        <a href="#" class="btn-datve">ĐẶT VÉ</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-3 mt-10 movie-item">
+                                <div class="article-movie-home">
+                                    <img class="img-fluid" src="img/film-KeHoachGiaiCuu.jpeg" alt="">
+                                    <div class="movie-hover">
+                                        <p href="#" class="tx_black">Kế hoạch đào tẩu 3: Giải cứu (2D) - C18</p>
+                                        <p class="font_light">
+                                            Thể loại: Hành động<br> Khởi chiếu: 11/07/2019
+                                        </p>
+                                        <a href="#" class="btn-datve">ĐẶT VÉ</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=" col-md-3 col-sm-3 mt-10 movie-item">
+                                <div class="article-movie-home">
+                                    <img class="img-fluid" src="img/film-LionKing.jpeg" alt="">
+                                    <div class="movie-hover">
+                                        <p href="#" class="tx_black">Vua sư tử (2D,PĐ) - P</p>
+                                        <p class="font_light">
+                                            Thể loại: Phiêu lưu<br> Khởi chiếu: 17/07/2019
+                                        </p>
+                                        <a href="#" class="btn-datve">ĐẶT VÉ</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-md-3 col-sm-3 mt-10 movie-item">
+                                <div class="article-movie-home">
+                                    <img class="img-fluid" src="img/film-SpiderMan.jpeg" alt="">
+                                    <div class="movie-hover">
+                                        <p href="#" class="tx_black">Người nhện xa nhà (2D) - C13</p>
+                                        <p class="font_light">
+                                            Thể loại: Hành động<br> Khởi chiếu: 03/07/2019
+                                        </p>
+                                        <a href="#" class="btn-datve">ĐẶT VÉ</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-3 mt-10 movie-item">
+                                <div class="article-movie-home">
+                                    <img class="img-fluid" src="img/film-KiSinhTrung.jpeg" alt="">
+                                    <div class="movie-hover">
+                                        <p href="#" class="tx_black">Ký sinh trùng (2D) - C18</p>
+                                        <p class="font_light">
+                                            Thể loại: Tâm lý, tình cảm<br> Khởi chiếu: 21/06/2019
+                                        </p>
+                                        <a href="#" class="btn-datve">ĐẶT VÉ</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-3 mt-10 movie-item">
+                                <div class="article-movie-home">
+                                    <img class="img-fluid" src="img/film-KeHoachGiaiCuu.jpeg" alt="">
+                                    <div class="movie-hover">
+                                        <p href="#" class="tx_black">Kế hoạch đào tẩu 3: Giải cứu (2D) - C18</p>
+                                        <p class="font_light">
+                                            Thể loại: Hành động<br> Khởi chiếu: 11/07/2019
+                                        </p>
+                                        <a href="#" class="btn-datve">ĐẶT VÉ</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div id="tab-02" class="col-md-12 tab-content animatedFadeInUp fadeInUp" style="display: none;">
+                        <div class="row p-10">
+                            <div class=" col-md-3 col-sm-3 mt-10 movie-item">
+                                <div class="article-movie-home">
+                                    <img class="img-fluid" src="img/film-LionKing.jpeg" alt="">
+                                    <div class="movie-hover">
+                                        <p href="#" class="tx_black">Vua sư tử (2D,PĐ) - P</p>
+                                        <p class="font_light">
+                                            Thể loại: Phiêu lưu Ký<br> Khởi chiếu: 17/07/2019
+                                        </p>
+                                        <a href="#" class="btn-datve">ĐẶT VÉ</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-md-3 col-sm-3 mt-10 movie-item">
+                                <div class="article-movie-home">
+                                    <img class="img-fluid" src="img/film-SpiderMan.jpeg" alt="">
+                                    <div class="movie-hover">
+                                        <p href="#" class="tx_black">Người nhện xa nhà (2D) - C13</p>
+                                        <p class="font_light">
+                                            Thể loại: Hành động<br> Khởi chiếu: 03/07/2019
+                                        </p>
+                                        <a href="#" class="btn-datve">ĐẶT VÉ</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-3 mt-10 movie-item">
+                                <div class="article-movie-home">
+                                    <img class="img-fluid" src="img/film-KiSinhTrung.jpeg" alt="">
+                                    <div class="movie-hover">
+                                        <p href="#" class="tx_black">Ký sinh trùng (2D) - C18</p>
+                                        <p class="font_light">
+                                            Thể loại: Tâm lý, tình cảm<br> Khởi chiếu: 21/06/2019
+                                        </p>
+                                        <a href="#" class="btn-datve">ĐẶT VÉ</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-3 mt-10 movie-item">
+                                <div class="article-movie-home">
+                                    <img class="img-fluid" src="img/film-KeHoachGiaiCuu.jpeg" alt="">
+                                    <div class="movie-hover">
+                                        <p href="#" class="tx_black">Kế hoạch đào tẩu 3: Giải cứu (2D) - C18</p>
+                                        <p class="font_light">
+                                            Thể loại: Hành động<br> Khởi chiếu: 11/07/2019
+                                        </p>
+                                        <a href="#" class="btn-datve">ĐẶT VÉ</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=" col-md-3 col-sm-3 mt-10 movie-item">
+                                <div class="article-movie-home">
+                                    <img class="img-fluid" src="img/film-LionKing.jpeg" alt="">
+                                    <div class="movie-hover">
+                                        <p href="#" class="tx_black">Vua sư tử (2D,PĐ) - P</p>
+                                        <p class="font_light">
+                                            Thể loại: Phiêu lưu<br> Khởi chiếu: 17/07/2019
+                                        </p>
+                                        <a href="#" class="btn-datve">ĐẶT VÉ</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-md-3 col-sm-3 mt-10 movie-item">
+                                <div class="article-movie-home">
+                                    <img class="img-fluid" src="img/film-SpiderMan.jpeg" alt="">
+                                    <div class="movie-hover">
+                                        <p href="#" class="tx_black">Người nhện xa nhà (2D) - C13</p>
+                                        <p class="font_light">
+                                            Thể loại: Hành động<br> Khởi chiếu: 03/07/2019
+                                        </p>
+                                        <a href="#" class="btn-datve">ĐẶT VÉ</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-3 mt-10 movie-item">
+                                <div class="article-movie-home">
+                                    <img class="img-fluid" src="img/film-KiSinhTrung.jpeg" alt="">
+                                    <div class="movie-hover">
+                                        <p href="#" class="tx_black">Ký sinh trùng (2D) - C18</p>
+                                        <p class="font_light">
+                                            Thể loại: Tâm lý, tình cảm<br> Khởi chiếu: 21/06/2019
+                                        </p>
+                                        <a href="#" class="btn-datve">ĐẶT VÉ</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-3 mt-10 movie-item">
+                                <div class="article-movie-home">
+                                    <img class="img-fluid" src="img/film-KeHoachGiaiCuu.jpeg" alt="">
+                                    <div class="movie-hover">
+                                        <p href="#" class="tx_black">Kế hoạch đào tẩu 3: Giải cứu (2D) - C18</p>
+                                        <p class="font_light">
+                                            Thể loại: Hành động<br> Khởi chiếu: 11/07/2019
+                                        </p>
+                                        <a href="#" class="btn-datve">ĐẶT VÉ</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div id="tab-03" class="col-md-12 tab-content animatedFadeInUp fadeInUp" style="display: none;">
+                        <div class="row"></div>
+                    </div>
+
+
+
+                    <!-- <ul>
+                                    <li class="last" style="width:294px ; height:437px">
+                                        <a href="#" title="caption">
+                                            <img src="img/film-LionKing.jpeg" Film_LionKing.jpg"
+                                                title="Film_LionKing.jpg">
+                                        </a>
+                                        <div class="movie-hover">
+                                            <p href="#" class="tx_black">Vua sư tử (3D,LT) - P</p>
+                                            <p class="font_light">
+                                                Thể loại: Phiêu lưu<br>
+
+                                                Khởi chiếu: 17/07/2019
+                                            </p>
+                                            <a href="#" class="btn-datve">ĐẶT VÉ</a>
+                                        </div>
+                                    </li>
+                                    <li class="last" style="width:294px ; height:437px">
+                                        <a href="#" title="caption">
+                                            <img src="img/film-LionKing.jpeg" Film_LionKing.jpg"
+                                                title="Film_LionKing.jpg">
+                                        </a>
+                                        <div class="movie-hover">
+                                            <p href="#" class="tx_black">Vua sư tử (2D,LT) - P</p>
+                                            <p class="font_light">
+                                                Thể loại: Phiêu lưu<br>
+
+                                                Khởi chiếu: 17/07/2019
+                                            </p>
+                                            <a href="#" class="btn-datve">ĐẶT VÉ</a>
+                                        </div>
+                                    </li>
+                                    <li class="last" style="width:294px ; height:437px">
+                                        <a href="#" title="caption">
+                                            <img src="img/film-LionKing.jpeg" Film_LionKing.jpg"
+                                                title="Film_LionKing.jpg">
+                                        </a>
+                                        <div class="movie-hover">
+                                            <p href="#" class="tx_black">Vua sư tử (2D,PĐ) - P</p>
+                                            <p class="font_light">
+                                                Thể loại: Phiêu lưu<br>
+
+                                                Khởi chiếu: 17/07/2019
+                                            </p>
+                                            <a href="#" class="btn-datve">ĐẶT VÉ</a>
+                                        </div>
+                                    </li>
+                                    </li>
+                                    <li class="last" style="width:294px ; height:437px">
+                                        <a href="#" title="caption">
+                                            <img src="img/film-SpiderMan.jpeg" Film_LionKing.jpg"
+                                                title="Film_LionKing.jpg">
+                                        </a>
+                                        <div class="movie-hover">
+                                            <p href="#" class="tx_black">Người nhện xa nhà (2D) - C13</p>
+                                            <p class="font_light">
+                                                Thể loại: Hành động<br>
+
+                                                Khởi chiếu: 03/07/2019
+                                            </p>
+                                            <a href="#" class="btn-datve">ĐẶT VÉ</a>
+                                        </div>
+                                    </li>
+                                    <li class="last" style="width:294px ; height:437px">
+                                        <a href="#" title="caption">
+                                            <img src="img/film-SpiderMan.jpeg" Film_LionKing.jpg"
+                                                title="Film_LionKing.jpg">
+                                        </a>
+                                        <div class="movie-hover">
+                                            <p href="#" class="tx_black">Người nhện xa nhà (3D) - C13</p>
+                                            <p class="font_light">
+                                                Thể loại: Hành động<br>
+
+                                                Khởi chiếu: 03/07/2019
+                                            </p>
+                                            <a href="#" class="btn-datve">ĐẶT VÉ</a>
+                                        </div>
+                                    </li>
+                                    <li class="last" style="width:294px ; height:437px">
+                                        <a href="#" title="caption">
+                                            <img src="img/film-KiSinhTrung.jpeg" Film_LionKing.jpg"
+                                                title="Film_LionKing.jpg">
+                                        </a>
+                                        <div class="movie-hover">
+                                            <p href="#" class="tx_black">Ký sinh trùng (2D) - C18</p>
+                                            <p class="font_light">
+                                                Thể loại: Tâm lý, tình cảm<br>
+
+                                                Khởi chiếu: 21/06/2019
+                                            </p>
+                                            <a href="#" class="btn-datve">ĐẶT VÉ</a>
+                                        </div>
+                                    </li>
+                                    <li class="last" style="width:294px ; height:437px">
+                                        <a href="#" title="caption">
+                                            <img src="img/film-KeHoachGiaiCuu.jpeg" Film_LionKing.jpg"
+                                                title="Film_LionKing.jpg">
+                                        </a>
+                                        <div class="movie-hover">
+                                            <p href="#" class="tx_black">Kế hoạch đào tẩu 3: Giải cứu (2D) - C18</p>
+                                            <p class="font_light">
+                                                Thể loại: Hành động<br>
+
+                                                Khởi chiếu: 11/07/2019
+                                            </p>
+                                            <a href="#" class="btn-datve">ĐẶT VÉ</a>
+                                        </div>
+                                    </li>
+                                    <li class="last" style="width:294px ; height:437px">
+                                        <a href="#" title="caption">
+                                            <img src="img/flim-StepUp6.jpeg" Film_LionKing.jpg"
+                                                title="Film_LionKing.jpg">
+                                        </a>
+                                        <div class="movie-hover">
+                                            <p href="#" class="tx_black">Step up 6: Vũ điệu đường phố (2D) - C16</p>
+                                            <p class="font_light">
+                                                Thể loại: Tâm lý , tình cảm<br>
+
+                                                Khởi chiếu: 19/07/2019
+                                            </p>
+                                            <a href="#" class="btn-datve">ĐẶT VÉ</a>
+                                        </div>
+                                    </li>
+                                </ul> -->
+                </div>
+
+            </div>
+        </div>
+
+        <div class="blog-tab">
+            <div class="block-new">
+                <div class="menu-tab">
+                    <ul>
+                        <li class="tx_white"><a href="#tab_1" id="tab_1" class="current_tab active">TIN TỨC</a>
+                        </li>
+                    </ul>
+                    <!-- <p><a href="#">"XEM THÊM"<i class="fa fa-arrow-right"></i></a></p> -->
+                </div>
+                <ul class="news-left">
+                    <div class="news">
+                        <div class="movie-thumb">
+                            <a href="#" class="has-overlay">
+                                <img src="img/news-1.png" alt>
+                            </a>
+                        </div>
+                        <h5>
+                            <a href="#">Những Điều Bất Ngờ Từ Teaser Mắt Biếc</a>
+                        </h5>
+                        <ul class="article-news-like" style="padding-bottom: 10px">
+                            <div id="fb-root"></div>
+                            <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v3.3"></script>
+                            <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-width="" data-layout="button_count" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+                        </ul>
+                        <div class="news-content">
+                            <p>
+                                <span style="font-size: 14px;">
+                                    <span style="font-family: Arial, Helvetica, sans-serif">
+                                        <span style="line-height: 150%;">
+                                            <i>
+                                                <span style="line-height: 150%">
+                                                    "Sau khi được tung ra, teaser Mắt Biếc ngay lập tức đã trở thành
+                                                    chủ
+                                                    đề cực hot trên mạng xã hội. Sức ảnh hưởng của nhà văn Nguyễn
+                                                    Nhật
+                                                    Ánh, đạo diễn Victor Vũ và nhạc sĩ Phan Mạnh Quỳnh quả thực
+                                                    không
+                                                    thể bỏ qua"
+                                                </span>
+                                </i>
+                                </span>
+                                </span>
+                                </span>
+                            </p>
+
+                        </div>
+                    </div>
+                    <div class="news">
+                        <div class="movie-thumb">
+                            <a href="#" class="has-overlay">
+                                <img src="img/news-2.jpg" alt>
+                            </a>
+                        </div>
+                        <h5>
+                            <a href="#">Những Bí Mật Động Trời Marvel Vừa Hé Lộ Về Phase 4</a>
+                        </h5>
+                        <ul class="article-news-like" style="padding-bottom: 10px">
+                            <div id="fb-root"></div>
+                            <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v3.3"></script>
+                            <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-width="" data-layout="button_count" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+                        </ul>
+                        <div class="news-content">
+                            <p>
+                                <span style="font-size: 14px;">
+                                    <span style="font-family: Arial, Helvetica, sans-serif">
+                                        <span style="line-height: 150%;">
+                                            <i>
+                                                <span style="line-height: 150%">
+                                                    "Mười một năm từ công ty thoi thóp phải “bán con” để sống,
+                                                    Marvel
+                                                    vượt xa tất cả đối thủ khác để đứng trên đỉnh thế giới. Ông
+                                                    hoàng
+                                                    này sẽ thống trị dài lâu hay đế chế sắp lụi tàn vì phase 4 thiếu
+                                                    Robert Downey Jr. và Chris Evans?"
+                                                </span>
+                                </i>
+                                </span>
+                                </span>
+                                </span>
+                            </p>
+
+                        </div>
+                    </div>
+                    <div class="news">
+                        <div class="movie-thumb">
+                            <a href="#" class="has-overlay">
+                                <img src="img/news-3.png" alt>
+                            </a>
+                        </div>
+                        <h5>
+                            <a href="#">Chuyện "Kinh Dị" Đằng Sau Ống Kính Annabelle Comes Home</a>
+                        </h5>
+                        <ul class="article-news-like" style="padding-bottom: 10px">
+                            <div id="fb-root"></div>
+                            <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v3.3"></script>
+                            <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-width="" data-layout="button_count" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+                        </ul>
+                        <div class="news-content">
+                            <p>
+                                <span style="font-size: 14px;">
+                                    <span style="font-family: Arial, Helvetica, sans-serif">
+                                        <span style="line-height: 150%;">
+                                            <i>
+                                                <span style="line-height: 150%">
+                                                    "Chẳng còn bao lâu nữa chúng ta sẽ được gặp lại Annabelle trên
+                                                    màn
+                                                    ảnh rộng. Trước đó hãy cùng điểm qua một vài câu chuyện hậu
+                                                    trường
+                                                    khá thú vị xung quanh bộ phim kinh dị này nhé."
+                                                </span>
+                                </i>
+                                </span>
+                                </span>
+                                </span>
+                            </p>
+
+                        </div>
+                    </div>
+                    <div class="news">
+                        <div class="movie-thumb">
+                            <a href="#" class="has-overlay">
+                                <img src="img/news-4.jpg" alt>
+                            </a>
+                        </div>
+                        <h5>
+                            <a href="#">Vũ Trụ Điện Ảnh Marvel Sẽ Ra Sao Sau Avengers: Endgame?</a>
+                        </h5>
+                        <ul class="article-news-like" style="padding-bottom: 10px">
+                            <div id="fb-root"></div>
+                            <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v3.3"></script>
+                            <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-width="" data-layout="button_count" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+                        </ul>
+                        <div class="news-content">
+                            <p>
+                                <span style="font-size: 14px;">
+                                    <span style="font-family: Arial, Helvetica, sans-serif">
+                                        <span style="line-height: 150%;">
+                                            <i>
+                                                <span style="line-height: 150%">
+                                                    Trong thời gian chờ đợi bom tấn này
+                                                    phá kỷ lục huyền thoại <i>Avatar</i>, hãy cùng ngẫm lại những gì
+                                                    vũ trụ Marvel đang sở hữu sau <strong>Hồi Kết</strong>.
+                                                </span>
+                                </i>
+                                </span>
+                                </span>
+                                </span>
+                            </p>
+
+                        </div>
+                    </div>
+                </ul>
+            </div>
+            <div class="block-coment">
+                <div class="menu-tab">
+                    <ul>
+                        <li class="tx_white"><a href="#tab1" id="tab_1" class="current_tab active">BÌNH LUẬN</a>
+                        </li>
+                        <!-- <p><a href="#">"XEM THÊM"<i class="fa fa-arrow-right"></i></a></p> -->
+                    </ul>
+                </div>
+                <ul class="blog-right">
+                    <div class="news">
+                        <div class="movie-thumb">
+                            <a href="#" class="has-overlay">
+                                <img src="img/blog-04.jpg" alt>
+                            </a>
+                        </div>
+                        <h5>
+                            <a href="#">Avengers: Endgame (2D) - C13</a>
+                        </h5>
+                        <ul class="article-news-like" style="padding-bottom: 10px">
+                            <div id="fb-root"></div>
+                            <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v3.3"></script>
+                            <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-width="" data-layout="button_count" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+                        </ul>
+                        <div class="news-content">
+                            <p style="margin-right: 10px">
+                                <span style="font-size: 14px;">
+                                    <span style="font-family: Arial, Helvetica, sans-serif">
+                                        <span style="line-height: 150%;">
+                                            <i>
+                                                <span style="line-height: 150%">
+                                                    "Tôi là người rất dễ bị thu hút bởi những bộ phim hành động
+                                                    nhưng
+                                                    lần đầu tiên tôi xem một bộ phim hút hồn và đặc sắc đến không
+                                                    tưởng,
+                                                    tôi dành lời khen thưởng của mình tới phim Avengers :Endgame."
+                                                </span>
+                                </i>
+                                </span>
+                                </span>
+                                </span>
+                            </p>
+
+                        </div>
+                    </div>
+                    <div class="news">
+                        <div class="movie-thumb">
+                            <a href="#" class="has-overlay">
+                                <img src="img/blog-01.jpg" alt>
+                            </a>
+                        </div>
+                        <h5>
+                            <a href="#">[Review] Vua Sư Tử: Kịch Bản Kinh Điển Kết Hợp CGI Đỉnh Cao</a>
+                        </h5>
+                        <ul class="article-news-like" style="padding-bottom: 10px">
+                            <div id="fb-root"></div>
+                            <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v3.3"></script>
+                            <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-width="" data-layout="button_count" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+                        </ul>
+                        <div class="news-content">
+                            <p style="margin-right: 10px">
+                                <span style="font-size: 14px;">
+                                    <span style="font-family: Arial, Helvetica, sans-serif">
+                                        <span style="line-height: 150%;">
+                                            <i>
+                                                <span style="line-height: 150%">
+                                                    "Tại sao Disney lại muốn remake những tác phẩm hoạt hình đã đi
+                                                    vào
+                                                    kinh điển. Chắc chắn không nằm ngoài việc mỗi tác phẩm đều mang
+                                                    lại
+                                                    cho nhà Chuột hàng núi tiền."
+                                                </span>
+                                </i>
+                                </span>
+                                </span>
+                                </span>
+                            </p>
+
+                        </div>
+                    </div>
+                    <div class="news">
+                        <div class="movie-thumb">
+                            <a href="#" class="has-overlay">
+                                <img src="img/blog-02.jpg" alt>
+                            </a>
+                        </div>
+                        <h5>
+                            <a href="#">[Review] Người Nhện: Marvel Học Tập Hướng Đen Tối Của DC?</a>
+                        </h5>
+                        <ul class="article-news-like" style="padding-bottom: 10px">
+                            <div id="fb-root"></div>
+                            <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v3.3"></script>
+                            <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-width="" data-layout="button_count" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+                        </ul>
+                        <div class="news-content">
+                            <p style="margin-right: 10px">
+                                <span style="font-size: 14px;">
+                                    <span style="font-family: Arial, Helvetica, sans-serif">
+                                        <span style="line-height: 150%;">
+                                            <i>
+                                                <span style="line-height: 150%">
+                                                    "Nếu cho rằng Avengers: Endgame là đỉnh cao những cú troll của
+                                                    Marvel thì trò lừa từ đầu đến cuối Spider-Man: Far From Home sẽ
+                                                    hoàn
+                                                    toàn làm bạn “đứng hình”. "
+                                                </span>
+                                </i>
+                                </span>
+                                </span>
+                                </span>
+                            </p>
+
+                        </div>
+                    </div>
+                    <div class="news">
+                        <div class="movie-thumb">
+                            <a href="#" class="has-overlay">
+                                <img src="img/blog-03.jpg" alt>
+                            </a>
+                        </div>
+                        <h5>
+                            <a href="#">[Review] Toy Story 4: Phim Hoạt Hình Thôi Mà, Có Cần Phải Hay Vậy Không!</a>
+                        </h5>
+                        <ul class="article-news-like" style="padding-bottom: 10px">
+                            <div id="fb-root"></div>
+                            <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v3.3"></script>
+                            <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-width="" data-layout="button_count" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+                        </ul>
+                        <div class="news-content">
+                            <p style="margin-right: 10px">
+                                <span style="font-size: 14px;">
+                                    <span style="font-family: Arial, Helvetica, sans-serif">
+                                        <span style="line-height: 150%;">
+                                            <i>
+                                                <span style="line-height: 150%">
+                                                    "Xem phim hoạt hình thì chỉ cần vui là được! Cũng đúng, nhỉ?
+                                                    Nhưng,
+                                                    không chỉ mỗi cảm xúc đó, Toy Story 4 là một câu chuyện vô cùng
+                                                    cảm
+                                                    động và sâu sắc đến nỗi có thể lấy đi được nước mắt của rất
+                                                    nhiều,
+                                                    rất nhiều khán giả lớn tuổi."
+                                                </span>
+                                </i>
+                                </span>
+                                </span>
+                                </span>
+                            </p>
+
+                        </div>
+                    </div>
+                </ul>
+            </div>
+
+        </div>
+        <div class="container-fluid event-tab">
+            <div class="row">
+                <div class="events-tab">
+                    <div class="menu-tab">
+                        <ul>
+                            <li class="tx_white"><a href="#tab1" class="current-tab active">Khuyến Mãi - Sự Kiện</a>
+                            </li>
+                        </ul>
+                        <!-- <p><a href="#">XEM THÊM <i class="fa fa-arrow-right"></i></a></p> -->
+                    </div>
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="col-md-3 col-sm-3">
+                                <div class="events-article-home"><img src="img/event-01.jpg" alt=""></div>
+                            </div>
+                            <div class="col-md-3 col-sm-3">
+                                <div class="events-article-home"><img src="img/event-02.jpg" alt=""></div>
+                            </div>
+                            <div class="col-md-3 col-sm-3">
+                                <div class="events-article-home"><img src="img/event-03.jpg" alt=""></div>
+                            </div>
+                            <div class="col-md-3 col-sm-3">
+                                <div class="events-article-home"><img src="img/event-04.jpg" alt=""></div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="footer-bg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+                        <ul class="list-unstyled clear-margins">
+                            <li class="widget-container widget_nav_menu">
+                                <h1 class="title-widget">Giới thiệu</h1>
+                                <ul>
+                                    <li><a href="/ve-chung-toi"><i class="fa fa-angle-double-right"></i> Về chúng tôi</a></li>
+                                    <li><a href="/thoa-thuan-su-dung"><i class="fa fa-angle-double-right"></i> Thoả thuận sử dụng</a></li>
+                                    <li><a href="/quy-che-hoat-dong"><i class="fa fa-angle-double-right"></i> Quy chế hoạt động</a></li>
+                                    <li><a href="/chinh-sach-bao-mat"><i class="fa fa-angle-double-right"></i> Chính sách bảo mật</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+                        <ul class="list-unstyled clear-margins">
+                            <li class="widget-container widget_nav_menu">
+                                <h1 class="title-widget">Góc điện ảnh</h1>
+                                <ul>
+                                    <li><a href="/dien-anh"><i class="fa fa-angle-double-right"></i> Thể loại phim</a></li>
+                                    <li><a href="/binh-luan-phim"><i class="fa fa-angle-double-right"></i> Bình luận phim</a></li>
+                                    <li><a href="/movie-blog"><i class="fa fa-angle-double-right"></i> Blog điện ảnh</a></li>
+                                    <li><a href="/phim-hay"><i class="fa fa-angle-double-right"></i> Phim hay tháng</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+                        <ul class="list-unstyled clear-margins">
+                            <li class="widget-container widget_nav_menu">
+                                <h1 class="title-widget">Hỗ trợ</h1>
+                                <ul>
+                                    <li><a href="/gop-y"><i class="fa fa-angle-double-right"></i> Góp ý</a></li>
+                                    <li><a href="/sale-and-service"><i class="fa fa-angle-double-right"></i> Sale &amp; Services</a></li>
+                                    <li><a href="/rap-gia-ve"><i class="fa fa-angle-double-right"></i> Rạp / giá vé</a></li>
+                                    <li><a href="/tuyen-dung"><i class="fa fa-angle-double-right"></i> Tuyển dụng</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        </div>
+        <!-- The modal -->
+        <div class="modal fade" id="registed" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content register-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="modalLabel">Đăng Ký Nhanh</h4>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    </div>
+                    <div class="modal-body">
+                        <fieldset class="form-group">
+                            <label for="e-mail">Nhập Vào Email</label>
+                            <input type="text" class="form-control" id="e-mail" name="e-mail">
+                        </fieldset>
+                        <fieldset class="form-group">
+                            <label for="password">Nhập Mật Khẩu</label>
+                            <label for="password">Nhập Lại Mật Khẩu</label>
+                            <input type="text" class="form-control" id="password" name="password">
+                        </fieldset>
+                        <fieldset class="form-group">
+                            <label for="phone-number" describedby="helpAccountId">Nhập Số Điện Thoại</label>
+                            <span id="helpAccountId" class="form-text text-muted">Số điện thoại theo định dạng (+84).</span>
+                            <input type="text" class="form-control" id="phone-number" name="phone-number">
+                        </fieldset>
+                        <hr>
+                        <p>Đăng ký tai khoản phải chấp nhận điều kiện của người dùng <a href="#" style="color: blue;">Điều
+                            kiện & Bảo Mật</a>.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-success" data-dismiss="modal" data-toggle="modal" data-target="#success-registed">Đăng Ký</button>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="success-registed" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content register-content">
+                    <div class="modal-header">
+                        <h2 class="modal-title" id="modalLabel" style="text-align: center;">Chào Mừng Bạn</h2>
+                    </div>
+                    <div class="modal-body">
+                        <h5 style="font-weight: 200;">Chúc mừng bạn đã đăng ký thành công, bạn đã có thể đăng nhặp bằng Email của mình</h5>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content register-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="modalLabel">Đăng Ký Nhanh</h4>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    </div>
+                    <div class="modal-body">
+                        <fieldset class="form-group">
+                            <label for="e-mail">Nhập Vào Email</label>
+                            <span id="helpAccountId" class="form-text text-muted">Hoặc số điện thoại theo định dạng
+                            (+84).</span>
+                            <input type="text" class="form-control" id="e-mail" name="e-mail">
+                        </fieldset>
+                        <fieldset class="form-group">
+                            <label for="password">Nhập Mật Khẩu</label>
+                            <input type="text" class="form-control" id="password" name="password">
+                        </fieldset>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-success" data-dismiss="modal" onclick="window.location.href='web-chitiet.html'">Đăng Nhập</button>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <script src="vendor/jquery-3.4.1.min.js"></script>
+        <script src="vendor/popper.min.js"></script>
+        <script src="vendor/bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+        <script src="js/web-trangchu.js"></script>
+
+</body>
+
+</html>

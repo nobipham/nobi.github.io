@@ -1,0 +1,402 @@
+body {
+    margin: 0px;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+    color: #cacbc2;
+}
+
+a {
+    text-decoration: none;
+    background-color: transparent;
+}
+
+ul li {
+    list-style: none;
+}
+
+.backgroundVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.main {
+    position: fixed;
+    z-index: 20;
+    overflow-y: auto;
+    overflow-x: visible;
+    height: 100%;
+    width: 100%;
+}
+
+.header {
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100px;
+    margin: auto;
+    padding: 10px;
+}
+
+.header .right {
+    float: right;
+    margin-top: 5px;
+    padding-top: 5px;
+    text-align: right;
+    font-size: 1.5em;
+}
+
+.header .right .user span a {
+    font-size: 0.7em;
+    text-decoration: none;
+    border: none;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.header .right .user span a:hover {
+    color: red;
+}
+
+.header .header_home a img {
+    text-align: center;
+    float: left;
+    animation: logo 10s linear infinite;
+}
+
+nav {
+    height: auto;
+    margin: 10px;
+}
+
+nav div {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+}
+
+nav div .navbar-nav {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    float: left;
+}
+
+nav div .navbar-nav li {
+    width: 140px;
+    text-align: center;
+    line-height: 20px;
+    /* border-right: 1px solid white;  */
+}
+
+nav div ul li a {
+    font-size: 1.1em;
+    font-weight: 500;
+    color: white;
+}
+
+nav div ul li a:hover {
+    color: rgba(255, 255, 255, .5);
+    border-bottom: 2px solid white;
+    padding-bottom: 5px;
+    opacity: 1;
+}
+
+
+/*Menu Tab*/
+
+.menu-tab ul {
+    margin: 10px;
+    border-bottom: 10px solid rgb(219, 39, 39);
+    height: 50px;
+}
+
+.menu-tab li {
+    float: left;
+    margin-right: 100px;
+    font-size: 1.1em;
+    height: 50px;
+    padding-top: 7px;
+    text-transform: uppercase;
+    list-style-type: none;
+}
+
+.menu-tab li a.active {
+    background-color: rgb(219, 39, 39);
+}
+
+.menu-tab li a {
+    color: #fff;
+    background: rgba(145, 6, 6, 0.671);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    line-height: 30px;
+    font-weight: 500;
+    padding: 8px 20px;
+    border: 1px solid rgb(219, 39, 39);
+    border-bottom: none;
+}
+
+.menu-tab p {
+    color: rgb(219, 39, 39);
+    margin: 10px 30px 0 0;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.menu-tab p a {
+    color: rgb(219, 39, 39);
+}
+
+.menu-tab p a:hover {
+    opacity: 0.6;
+}
+
+
+/*Book Ticket*/
+
+.showtimes-group {
+    padding: 10px;
+}
+
+.panel-heading {
+    border-radius: 0;
+    color: #ffffff;
+    background-color: rgb(219, 39, 39, 0.8);
+    border-color: rgb(219, 39, 39, 0.5);
+    height: 40px;
+    line-height: 20px;
+    text-align: center;
+}
+
+.panel-title {
+    font-size: 16px;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.showtimes-group .list-group-item.movie {
+    padding: 20px 15px 35px 15px;
+}
+
+.showtimes-group .list-group-item {
+    padding: 20px 15px;
+    border-radius: 0;
+}
+
+.showtimes-row img {
+    width: 60px;
+    float: left;
+    margin-right: 10px;
+}
+
+.showtimes-group .showtimes-row .title-movie {
+    font-size: 18px;
+    line-height: 20px;
+}
+
+.title-movie {
+    position: relative;
+}
+
+.list-group-item {
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+    margin-bottom: -1px;
+    background-color: #fff;
+    border: 1px solid #dddddd;
+}
+
+a.list-group-item,
+button.list-group-item {
+    color: #555;
+}
+
+.list-group-item:last-child {
+    margin-bottom: 0;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+.showtimes-group .list-group-item.active:focus,
+.showtimes-group .list-group-item:hover {
+    color: white;
+    background-color: rgb(219, 39, 39);
+    border-color: rgb(219, 39, 39);
+}
+
+.list-group-item.active {
+    z-index: 2;
+    color: #fff;
+    background-color: rgb(219, 39, 39);
+    border-color: rgb(219, 39, 39);
+}
+
+.showtimes-group .showtimes-row p {
+    font-size: 14px;
+}
+
+.upper-text {
+    text-transform: uppercase!important;
+}
+
+.showtimes-group .showtimes-row p.vn {
+    color: #a0a3a7;
+}
+
+
+/*Theater in box film*/
+
+.showtimes-group .list-group-item-text {
+    padding: 20px 15px;
+    background-color: #fff;
+}
+
+.list-group-item-text {
+    margin: 0 0 11px;
+}
+
+
+/*Time in box film*/
+
+.showtimes-item .showtimes-list-wrapper {
+    display: table-row;
+}
+
+a.showtimes-list:hover {
+    border: 1px solid #fff;
+    background-color: red;
+}
+
+a.showtimes-list {
+    margin: 0 10px 10px 0;
+    padding: 5px 10px;
+    border: 1px solid #ced0da;
+    color: #43464b;
+    display: inline-block;
+}
+
+a:hover,
+a:focus {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+/*Ticket Buying*/
+
+.ticket-wrapper {
+    width: 100%;
+}
+
+.ticket-wrapper .booking-bg {
+    background-color: rgb(219, 39, 39);
+    margin-bottom: 10px;
+}
+
+.ticket-wrapper .booking-ticket {
+    clear: both;
+    min-height: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 10px;
+    width: 100%;
+    display: inline-block;
+}
+
+.ticket-wrapper .booking-ticket .booking-title {
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.table-responsive {
+    min-height: .01%;
+    overflow-x: auto;
+}
+
+.booking-ticket-table {
+    font-size: 14px;
+    width: 100%;
+    margin-bottom: 0;
+    background-color: #ffffff;
+}
+
+.table {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+
+.booking-ticket-table>thead {
+    background-color: rgb(219, 39, 39, 0.7);
+    border-color: rgb(219, 39, 39, 0.7);
+    color: #ffffff;
+}
+
+.booking-ticket-table>tbody>tr>td:first-child {
+    text-align: left;
+}
+
+.booking-ticket-table>tbody>tr>td {
+    border-top: none;
+    text-align: right;
+    vertical-align: middle;
+}
+
+
+/*Ticket Detail*/
+
+.ticket-header {
+    width: 100%;
+    background-color: #f1f1f1;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.ticket-feature {
+    clear: both;
+    min-height: 0;
+    box-sizing: border-box;
+    margin: 0;
+    width: 100%;
+    display: inline-block;
+}
+
+.ticket-feature div img {
+    width: 80%;
+    height: auto;
+}
+
+.ticket-detail .ticket-title {
+    font-size: 14px;
+    line-height: 20px;
+    color: #43464b;
+    font-weight: bold;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.ticket-detail .ticket-info p {
+    border-bottom: 1px dotted #ced0da;
+    padding: 10px 0;
+}
+
+.ticket-detail .ticket-price-total p {
+    padding: 10px 0;
+}
+
+.ticket-detail .ticket-price-total span {
+    color: rgb(219, 39, 39);
+    font-size: 20px;
+}
